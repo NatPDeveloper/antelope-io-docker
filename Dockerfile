@@ -15,3 +15,4 @@ RUN wget https://github.com/AntelopeIO/leap/releases/download/v3.1.0/leap-3.1.0-
 RUN apt-get update
 RUN apt-get upgrade -y
 RUN apt install -y ./cdt_3.0.0-rc3_amd64.deb ./leap-3.1.0-ubuntu22.04-x86_64.deb
+RUN rm ./cdt_3.0.0-rc3_amd64.deb ./leap-3.1.0-ubuntu22.04-x86_64.deb
