@@ -1,7 +1,7 @@
 # antelope-io-docker
 AntelopeIO Docker files
 
-Dockerfiles for leap & cdt.
+Dockerfiles relating to leap & cdt ecosystem.
 
 Directory:
 - dfuseeos - StreamingFast AntelopIO dfuseeos binary
