@@ -3,7 +3,7 @@ RUN ln -fs /usr/share/zoneinfo/America/New_York /etc/localtime
 
 RUN apt-get update
 RUN apt-get upgrade -y
-RUN apt-get install -y zip unzip wget git gcc curl nodejs npm
+RUN apt-get install -y ca-certificates zip unzip wget git gcc curl nodejs npm
 
 # leap & cdt
 RUN wget https://github.com/AntelopeIO/cdt/releases/download/v3.0.0-rc3/cdt_3.0.0-rc3_amd64.deb
