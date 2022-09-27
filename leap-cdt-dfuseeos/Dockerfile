@@ -10,7 +10,7 @@ RUN echo 'APT::Install-Recommends 0;' >> /etc/apt/apt.conf.d/01norecommends \
   && apt-get install -y ca-certificates zip unzip libncurses5 wget git build-essential cmake curl libboost-all-dev libcurl4-openssl-dev libgmp-dev libssl-dev libusb-1.0.0-dev libzstd-dev time pkg-config llvm-11-dev nginx npm yarn jq gdb lldb \
   && rm -rf /var/lib/apt/lists/*
 
-RUN wget https://github.com/AntelopeIO/cdt/releases/download/v3.0.0/cdt_3.0.0_amd64.deb
+RUN wget https://github.com/AntelopeIO/cdt/releases/download/v3.0.1/cdt_3.0.1_amd64.deb
 RUN wget https://github.com/AntelopeIO/leap/releases/download/v3.1.1/leap-3.1.1-ubuntu22.04-x86_64.deb
 RUN wget https://github.com/NatPDeveloper/antelope-firehose/raw/main/dfuse-eosio_linux_amd64_v1.tar.gz
 RUN tar -zxvf dfuse-eosio_linux_amd64_v1.tar.gz
@@ -18,5 +18,5 @@ RUN mv ./dfuse-eosio_linux_amd64_v1/dfuseeos /usr/bin/
 RUN rm dfuse-eosio_linux_amd64_v1.tar.gz
 RUN apt-get update
 RUN apt-get upgrade -y
-RUN apt install -y ./cdt_3.0.0_amd64.deb ./leap-3.1.1-ubuntu22.04-x86_64.deb
-RUN rm ./cdt_3.0.0_amd64.deb ./leap-3.1.1-ubuntu22.04-x86_64.deb
+RUN apt install -y ./cdt_3.0.1_amd64.deb ./leap-3.1.1-ubuntu22.04-x86_64.deb
+RUN rm ./cdt_3.0.1_amd64.deb ./leap-3.1.1-ubuntu22.04-x86_64.deb
